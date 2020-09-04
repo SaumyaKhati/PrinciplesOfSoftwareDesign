@@ -15,9 +15,7 @@ public class QuakeEntry implements Comparable<QuakeEntry>{
 		depth = d;
 	}
 	
-	public Location getLocation(){
-		return myLocation;
-	}
+	public Location getLocation(){ return myLocation; }
 	
 	public double getMagnitude(){
 		return magnitude;
