@@ -1,1 +1,1 @@
-public class MagnitudeFilter {}
+public class MagnitudeFilter implements Filter{    private double minMag;    private double maxMag;    MagnitudeFilter(double min, double max){        this.maxMag=max;        this.minMag=min;    }    @Override    public boolean satisfies(QuakeEntry qe) {        return qe.getMagnitude()<=maxMag && qe.getMagnitude() >= minMag;    }}
