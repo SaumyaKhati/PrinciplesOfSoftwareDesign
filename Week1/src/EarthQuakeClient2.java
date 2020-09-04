@@ -18,10 +18,8 @@ public class EarthQuakeClient2 {
     } 
 
     public void quakesWithFilter() { 
-        EarthQuakeParser parser = new EarthQuakeParser(); 
-        //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
-        String source = "data/nov20quakedatasmall.atom";
-        ArrayList<QuakeEntry> list  = parser.read(source);         
+
+        ArrayList<QuakeEntry> list  = readFile();         
         System.out.println("read data for "+list.size()+" quakes");
 
         Filter f = new MinMagFilter(4.0); 
@@ -50,6 +48,13 @@ public class EarthQuakeClient2 {
                 qe.getMagnitude(),
                 qe.getInfo());
         }
+    }
+
+    private ArrayList<QuakeEntry> readFile(){
+        EarthQuakeParser parser = new EarthQuakeParser();
+        //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
+        String source = "data/nov20quakedatasmall.atom";
+        return parser.read(source);
     }
 
 }

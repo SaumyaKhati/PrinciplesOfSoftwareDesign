@@ -1,1 +1,1 @@
-public class DepthFilter {}
+class DepthFilter implements Filter{    private double min, max;    DepthFilter(double min, double max){        this.max=max;        this.min=min;    }    @Override    public boolean satisfies(QuakeEntry qe) {        return qe.getDepth() <= max && qe.getDepth() >= min;    }}

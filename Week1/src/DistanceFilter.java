@@ -1,0 +1,1 @@
+public class DistanceFilter implements Filter {    private Location l;    private double maxDist;    DistanceFilter(Location l, double maxDist){        this.l=l;        this.maxDist=maxDist;    }    @Override    public boolean satisfies(QuakeEntry qe) {        return qe.getLocation().distanceTo(l)< maxDist;    }}
