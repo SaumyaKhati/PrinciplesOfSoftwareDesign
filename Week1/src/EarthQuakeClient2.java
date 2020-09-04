@@ -2,11 +2,8 @@ import java.util.*;
 import edu.duke.*;
 
 public class EarthQuakeClient2 {
-    public EarthQuakeClient2() {
-        // TODO Auto-generated constructor stub
-    }
 
-    public ArrayList<QuakeEntry> filter(ArrayList<QuakeEntry> quakeData, Filter f) { 
+    private ArrayList<QuakeEntry> filter(ArrayList<QuakeEntry> quakeData, Filter f) {
         ArrayList<QuakeEntry> answer = new ArrayList<QuakeEntry>();
         for(QuakeEntry qe : quakeData) { 
             if (f.satisfies(qe)) { 
@@ -17,14 +14,25 @@ public class EarthQuakeClient2 {
         return answer;
     } 
 
-    public void quakesWithFilter() { 
+    void quakesWithFilter() {
 
-        ArrayList<QuakeEntry> list  = readFile();         
+        ArrayList<QuakeEntry> list  = readFile();
         System.out.println("read data for "+list.size()+" quakes");
 
-        Filter f = new MinMagFilter(4.0); 
-        ArrayList<QuakeEntry> m7  = filter(list, f); 
-        for (QuakeEntry qe: m7) { 
+        ArrayList<QuakeEntry> first;
+        ArrayList<QuakeEntry> ans;
+
+//        Filter f = new MagnitudeFilter(4, 5);
+//        Filter f2 = new DepthFilter(-35000, -12000);
+//        first = filter(list, f);
+//        ans = filter(first, f2);
+
+        Filter f = new DistanceFilter(new Location(35.42, 139.43), 10000000);
+        Filter f2 = new PhraseFilter("end", "Japan");
+        first = filter(list, f);
+        ans = filter(first, f2);
+
+        for (QuakeEntry qe: ans) {
             System.out.println(qe);
         } 
     }
@@ -39,7 +47,7 @@ public class EarthQuakeClient2 {
         System.out.println("# quakes read: "+list.size());
     }
 
-    public void dumpCSV(ArrayList<QuakeEntry> list) {
+    private void dumpCSV(ArrayList<QuakeEntry> list) {
         System.out.println("Latitude,Longitude,Magnitude,Info");
         for(QuakeEntry qe : list){
             System.out.printf("%4.2f,%4.2f,%4.2f,%s\n",
@@ -52,9 +60,8 @@ public class EarthQuakeClient2 {
 
     private ArrayList<QuakeEntry> readFile(){
         EarthQuakeParser parser = new EarthQuakeParser();
-        //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
-        String source = "data/nov20quakedatasmall.atom";
+        //String source = "/Users/minkhati/Desktop/Repos/Coursera/PrinciplesOfSoftwareDesign/Week1/src/nov20quakedata.atom";
+        String source = "/Users/minkhati/Desktop/Repos/Coursera/PrinciplesOfSoftwareDesign/Week1/src/nov20quakedatasmall.atom";
         return parser.read(source);
     }
-
 }
