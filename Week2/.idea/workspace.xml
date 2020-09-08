@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0615e42-cae3-457a-b19a-752461e5671a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/courserajava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EarthQuakeParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuakeEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuakeSortInPlace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuakeSortWithTwoArrayLists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/earthQuakeDataDec6sample1.atom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/earthQuakeDataDec6sample2.atom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/earthQuakeDataWeekDec6sample1.atom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/earthQuakeDataWeekDec6sample2.atom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nov20quakedata.atom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nov20quakedatasmall.atom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Week2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="a0615e42-cae3-457a-b19a-752461e5671a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +13,7 @@
     <session id="345623881">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -134,7 +119,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599409172179" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599485888967" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -183,12 +168,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599341814437</updated>
-      <workItem from="1599341815929" duration="4957000" />
+      <workItem from="1599341815929" duration="4958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4957000" />
+    <option name="totallyTimeSpent" value="4958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="710" extended-state="0" />
@@ -209,7 +194,7 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286385" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286385" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
